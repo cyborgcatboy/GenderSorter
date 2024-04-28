@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gender Sorter</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body class="dark-mode">
+    <header>
+      <h1>Gender Sorter</h1>
+      <p>Dark mode: <input type="checkbox" id="switch"></p>
+      <div id="controller">
+        <div></div>
+        <input type="text" id="card-input" placeholder="Type here to add a card"/>
+        <button id="addcard" class="primary">Add Card</button>
+        <div></div>
+      </div>
+    </header>
+    <div class="sidebyside">
+      <p>Premade (with love):</p>
+      <div class="horz-scroll">
+        <button id="pop-all">Populate All</button>
+        <button class="precard">Fem. fat distr. (curvy body)</button>
+        <button class="precard">Masc. fat distr. (squarer body)</button>
+        <button class="precard">Adam's apple</button>
+        <button class="precard">Body Hair</button>
+        <button class="precard">Breasts</button>
+        <button class="precard">Vagina</button>
+        <button class="precard">Penis</button>
+        <button class="precard">Long hair</button>
+        <button class="precard">Short Hair</button>
+        <button class="precard">Smooth skin</button>
+        <button class="precard">Rough skin</button>
+        <button class="precard">Soft skin</button>
+        <button class="precard">High libido</button>
+        <button class="precard">Low libido</button>
+        <button class="precard">Soft Hair</button>
+        <button class="precard">Rough Hair</button>
+        <button class="precard">Facial Hair</button>
+      </div>
+    </div>
+    <h2>Have:</h2>
+    <div class="container">
+      <div id="rdw" class="col dropzone rdw" ondrop="onDrop(event)" ondragover="onDragOver(event)">
+        <h3>Really Don't Like</h3>
+      </div>
+      <div id="dw" class="col dropzone" ondrop="onDrop(event)" ondragover="onDragOver(event)">
+        <h3>Don't Like</h3>
+      </div>
+      <div id="n" class="col dropzone" ondrop="onDrop(event)" ondragover="onDragOver(event)">
+        <h3>Neutral</h3>
+      </div>
+      <div id="w" class="col dropzone" ondrop="onDrop(event)" ondragover="onDragOver(event)">
+        <h3>Like</h3>
+      </div>
+      <div id="rw" class="col dropzone" ondrop="onDrop(event)" ondragover="onDragOver(event)">
+        <h3>Really Like</h3>
+      </div>
+    </div>
+    <h2>Want:</h2>
+    <div class="container">
+      <div id="rdw" class="col dropzone rdw" ondrop="onDrop(event)" ondragover="onDragOver(event)">
+        <h3>Really Don't Want</h3>
+      </div>
+      <div id="dw" class="col dropzone" ondrop="onDrop(event)" ondragover="onDragOver(event)">
+        <h3>Don't Want</h3>
+      </div>
+      <div id="n" class="col dropzone" ondrop="onDrop(event)" ondragover="onDragOver(event)">
+        <h3>Neutral</h3>
+      </div>
+      <div id="w" class="col dropzone" ondrop="onDrop(event)" ondragover="onDragOver(event)">
+        <h3>Want</h3>
+      </div>
+      <div id="rw" class="col dropzone" ondrop="onDrop(event)" ondragover="onDragOver(event)">
+        <h3>Really Want</h3>
+      </div>
+    </div>
+    <hr>
+    <h2>Here's some ideas:</h2>
+    <ul>
+      <li>Body language</li>
+      <li>Other physical body features - both real and wanted (catboy meows)</li>
+      <li>Makeup and fashion style</li>
+      <li>Personal aesthetics - punk, goth, etc :3</li>
+    </ul>
+    <hr>
+    <footer>
+      <p>Using modified code from: <a href="https://github.com/DewofyourYouth/kanban-vanilla-js">Github: Kanban (Vanilla JS) by DewofyourYouth</a></p>
+      <p>Otherwise made by max! :3</p>
+    </footer>
+    <script src="./index.js"></script>
+  </body>
+</html>
